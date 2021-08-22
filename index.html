@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website M.Ismail</title>
+    <link rel="stylesheet" href="css/style2.css" type="text/css">
+</head>
+<body onload="start()" onunload="stop()">
+    <header>
+        <img src="img web/yt1.jpg" alt="">
+    </header>
+    <menu>
+        <div class="Menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dll/Profil mail5.html">Profil</a></li>
+            <li><a href="dll/Galeri mail5.html">Gallery</a></li>
+            <li><a href="dll/Kontak mail5.html">Contact</a></li>
+        </div>
+        <div class="tgl">
+            <li>
+                <script type="text/javascript">
+                    var d=new Date()
+                    var weekday=new 
+                    Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+                    var monthname=new 
+                    Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+                    document.write(weekday[d.getDay()] + " ")
+                    document.write(d.getDate() + ". ")
+                    document.write(monthname[d.getMonth()] + " ")
+                    document.write(d.getFullYear())
+                </script>
+            </li>
+        </div>
+        <div class="jam">
+            <script type="text/javascript">
+                var timer = null
+                function stop()
+                {
+                    clearTimeout(timer)
+                }
+                function start()
+                {
+                    var time = new Date()
+                    var hours = time.getHours()
+                    var minutes = time.getMinutes()
+                    minutes=((minutes < 10) ? "0" : "") + minutes
+                    var seconds = time.getSeconds()
+                    seconds=((seconds < 10) ? "0" : "") + seconds
+                    var clock = hours + ":" + minutes + ":" + seconds
+                    document.forms[0].display.value = clock
+                    timer = setTimeout("start()",1000)
+                }
+            </script>
+            <form>
+                <input type="text" name="display" size="4">
+            </form>
+        </div>
+    </menu>
+    <div class="karya">
+        <h1>Karya M.Ismail</h1>
+        <hr/>
+        <div class="karya1">
+            <h3>Short Movie Bujang Duano</h3>
+            <p><iframe src="https://www.youtube.com/embed/ucYxdbKeYMk" frameborder="0"></iframe></p>
+        </div>
+        <div class="karya2">
+            <h3>Behind The Scene Bujang Duano</h3>
+            <p><iframe src="https://www.youtube.com/embed/c-GP3f_EBZQ" frameborder="0"></iframe></p>
+        </div>
+        <div class="karya3">
+            <h3>Film Dari Ibu Untuk Ibu</h3>
+            <p><iframe src="https://www.youtube.com/embed/rze5Lx0skN8" frameborder="0"></iframe></p>
+        </div>
+        <br>
+        <p><a href="https://bit.ly/3h5ej1H">Untuk lebih banyak liat di sini aja....</a></p>
+    </div>
+
+    <div class="Isi">
+        <div class="home">
+            <h1>Selamat Datang Di Website M.Ismail</h1>
+            <hr/>
+            <br>
+            <p>Ini merupakan web tentang M.Ismail. Web ini dibuat untuk yang mengetahui tentang saya dan untuk mengetahui lebih lanjut tentang apa saja karya yang telah saya buat bersama 
+                teman-teman saya, web ini juga di buat di latarbelakangi tugas Matakuliah Pemograman WEB.
+            </p>
+            <br>
+            <p>Web ini dibuat pada tanggal 25 Maret 2021, webside ini berisikan profil, galeri dan karya (dapat dilihat di bagian Karya). Untuk mengetahui lebih lengkap bio data dari <span>Muhammad Ismail</span> 
+               dapat dilihat dari Menu <span><a href="Profil mail5.html">Profil</a></span>, jika ingin melihat <span>Foto-foto</span> bisa dilihat di Menu <span><a href="Galeri mail5.html">Gallery</a></span>, 
+               jika ingin menghubungi bisa dilihat <span>kontaknya</span> di Menu <span><a href="Kontak mail5.html">Contact</a></span>, dan terakhir jika ingin melihat karya <span>Muhammad Ismail</span> dapat dilihat di Menu 
+               <span><a href="Karya mail5.html">Karya</a></span>.</p>
+            <br>
+            
+        </div>
+    </div>
+</body>
+<footer>
+    <h2>Muhammad_Ismail &COPY; 2021</h2>
+</footer>
+</html>

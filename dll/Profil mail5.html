@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Websie M.Ismail</title>
+    <link rel="stylesheet" href="../css/style2.css" type="text/css">
+</head>
+<body onload="start()" onunload="stop()">
+    <header>
+        <img src="img web/yt1.jpg" alt="">
+    </header>
+    <menu>
+        <div class="Menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Profil mail5.html">Profil</a></li>
+            <li><a href="Galeri mail5.html">Gallery</a></li>
+            <li><a href="Kontak mail5.html">Contact</a></li>
+        </div>
+        <div class="tgl">
+            <li>
+                <script type="text/javascript">
+                    var d=new Date()
+                    var weekday=new 
+                    Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+                    var monthname=new 
+                    Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+                    document.write(weekday[d.getDay()] + " ")
+                    document.write(d.getDate() + ". ")
+                    document.write(monthname[d.getMonth()] + " ")
+                    document.write(d.getFullYear())
+                </script>
+            </li>
+        </div>
+        <div class="jam">
+            <script type="text/javascript">
+                var timer = null
+                function stop()
+                {
+                    clearTimeout(timer)
+                }
+                function start()
+                {
+                    var time = new Date()
+                    var hours = time.getHours()
+                    var minutes = time.getMinutes()
+                    minutes=((minutes < 10) ? "0" : "") + minutes
+                    var seconds = time.getSeconds()
+                    seconds=((seconds < 10) ? "0" : "") + seconds
+                    var clock = hours + ":" + minutes + ":" + seconds
+                    document.forms[0].display.value = clock
+                    timer = setTimeout("start()",1000)
+                }
+            </script>
+            <form>
+                <input type="text" name="display" size="4">
+            </form>
+        </div>
+    </menu>
+    <div class="karya">
+        <h1>Karya M.Ismail</h1>
+        <hr/>
+        <div class="karya1">
+            <h3>Short Movie Bujang Duano</h3>
+            <p><iframe src="https://www.youtube.com/embed/ucYxdbKeYMk" frameborder="0"></iframe></p>
+        </div>
+        <div class="karya2">
+            <h3>Behind The Scene Bujang Duano</h3>
+            <p><iframe src="https://www.youtube.com/embed/c-GP3f_EBZQ" frameborder="0"></iframe></p>
+        </div>
+        <div class="karya3">
+            <h3>Film Dari Ibu Untuk Ibu</h3>
+            <p><iframe src="https://www.youtube.com/embed/rze5Lx0skN8" frameborder="0"></iframe></p>
+        </div>
+        <p><a href="https://bit.ly/3h5ej1H">Untuk lebih banyak liat di sini aja....</a></p>
+    </div>
+
+    <div class="Isi">
+        <div class="profil">
+            <h1>Profil M.Ismail</h1>
+            <hr/>
+            <table>
+                <tr>
+                    <td rowspan="10" width="200px"><img src="../img web/IMG_0243 (2).jpg"></td>
+                </tr>
+                <tr>
+                    <td><b>Nama Panjang</b></td>
+                    <td>:</td>
+                    <td>Muhammad Ismail</td>
+                </tr>
+                <tr>
+                    <td><b>TTL</b></td>
+                    <td>:</td>
+                    <td>Kuala Tungkal, 22 April 2001</td>
+                </tr>
+                <tr>
+                    <td><b>Agama</b></td>
+                    <td>:</td>
+                    <td>Islam</td>
+                </tr>
+                <tr>
+                    <td><b>Anak Ke-</b></td>
+                    <td>:</td>
+                    <td>2 dari 3 bersaudara</td>
+                </tr>
+                <tr>
+                    <td><b>AlamatAsal</b></td>
+                    <td>:</td>
+                    <td>Kuala Tungkal, Kab.Tanjug Jabug Barat, Jambi</td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top"><b>Hobby</b></td>
+                    <td align="letf" valign="top">:</td>
+                    <td valign="top">
+                        1. Editing Video <br/>
+                        2. Design Grafis <br/>
+                        3. Bola Kaki <br>
+                        4. Pencak Silat <br>
+                        5. Baca Buku <br>
+                    </td>
+                    
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+</body>
+<footer>
+    <h2>Muhammad_Ismail &COPY; 2021</h2>
+</footer>
+</html>
